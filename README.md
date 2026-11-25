@@ -36,6 +36,7 @@ q-selector data/QASM/ --top 3
 ```
 
 Training writes `results/trained_model_optimized.pkl` and `training_metadata.json`.
+Model files are not included in the repository; run training before the first recommendation.
 Recommendation ranks backends with enough qubits for the input circuit. FOM is
 Hellinger fidelity multiplied by 10; higher scores rank first. Scores are
 predictions for the bundled calibration snapshots, not live hardware measurements.
